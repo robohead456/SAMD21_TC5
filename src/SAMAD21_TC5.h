@@ -19,6 +19,12 @@ void TC5_Handler(void) {
 }
 */
 
+void tcConfigure(float sampleRate);
+bool tcIsSyncing(void);
+void tcStartCounter(void);
+void tcReset(void);
+void tcDisable(void);
+
 // Configures the TC to generate output events at the sample frequency.
 // Configures the TC in Frequency Generation mode, with an event output once
 //   each time the sample frequency period expires.
